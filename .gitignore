@@ -1,0 +1,37 @@
+# Ignorar archivos y carpetas relacionados con Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Archivos de configuración de entorno local
+*.env
+
+# Ignorar el archivo de Excel donde se guardan los datos de usuarios
+datos_usuarios.xlsx
+
+# Archivos y carpetas relacionados con VSCode (si usas VSCode)
+.vscode/
+*.code-workspace
+
+# Ignorar archivos de logs y temporales
+*.log
+*.tmp
+
+# Archivos de base de datos locales
+*.db
+*.sqlite3
+
+# Ignorar otros archivos innecesarios
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de pruebas y resultados de test
+test_output/
+coverage/

@@ -41,16 +41,41 @@
         <!-- Sección de Imágenes -->
         <div class="image-gallery text-center">
             <div class="image-container">
-                <img src="{{ url_for('static', filename='img/PC1.jpg') }}" alt="Imagen 1" class="gamer-img">
+                <img src="{{ url_for('static', filename='img/PC1.jpg') }}" class="gamer-img">
             </div>
         </div>
+
         
         <!-- Botones adicionales -->
         <div class="text-center mt-4">
-            <a href="https://www.google.com" class="btn btn-danger neon-btn">Google</a>
-            <a href="https://www.facebook.com" class="btn btn-primary neon-btn">Facebook</a>
-            <a href="https://www.crunchyroll.com" class="btn btn-warning neon-btn">Crunchyroll</a>
+            <a href="https://www.google.com" class="btn btn-danger neon-btn" target="_blank">Google</a>
+            <a href="https://www.facebook.com" class="btn btn-primary neon-btn" target="_blank">Facebook</a>
+            <a href="https://www.crunchyroll.com" class="btn btn-warning neon-btn" target="_blank">Crunchyroll</a>
         </div>
+
+        <!-- Sección del formulario -->
+    <div class="form-container text-center mt-5">
+        <h2 class="neon-subtitle">Iniciar Sesión</h2>
+        <form action="{{ url_for('submit_form') }}" method="POST" class="login-form">
+            <!-- Campo para el nombre -->
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <!-- Campo para la contraseña -->
+            <div class="form-group mt-4">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <!-- Botón de continuar -->
+            <div class="form-group mt-4">
+                <button type="submit" class="neon-button">Continuar</button>
+            </div>
+        </form>
+    </div>
+    
     </div>
 
     <!-- Scripts de Bootstrap (Opcional) -->
